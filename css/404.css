@@ -1,0 +1,166 @@
+/* cyrillic */
+@font-face {
+  font-family: 'Cuprum';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Cuprum'), local('Cuprum-Regular'), url(http://fonts.gstatic.com/s/cuprum/v7/gJovVCIsuVHpE7lUT-5TYfesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Cuprum';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Cuprum'), local('Cuprum-Regular'), url(http://fonts.gstatic.com/s/cuprum/v7/TMj3tAAbnWTxQie9wLnZ2fesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Cuprum';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Cuprum'), local('Cuprum-Regular'), url(http://fonts.gstatic.com/s/cuprum/v7/rZj40-VH1f1Wt0yg6Fkbcw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+*{
+  margin:0;
+  padding:0;
+  border:none;
+}
+body{
+  background:#000031;
+}
+#sol{
+  display:block;
+  width:100%;
+  position:fixed;
+  bottom:0;
+  height:105px;
+  background:url('../images/bodyBG.jpg') bottom repeat-x;
+}
+#door{
+  display:block;
+  width:83px;
+  height:97px;
+  position:fixed;
+  bottom:105px;
+  right:36px;
+  background:url('../images/door.png');
+}
+#error{
+  position:fixed;
+  bottom: 400px;
+  width:100%;
+  margin: 0 auto;
+  color:white;
+  font-family:'Cuprum';
+  text-align:center;
+  text-transform:uppercase;
+}
+#sound{
+  position:fixed;
+  top: 50px;
+  right:30px;
+  height: 50px;
+  width:50px;
+  font-size:40px;
+  margin: 0 auto;
+  color:white;
+  font-family:'Cuprum';
+  text-align:center;
+  text-transform:uppercase;
+  cursor:pointer;
+}
+#sound.on{
+  background:url('../images/on.png');
+}
+#sound.off{
+  background:url('../images/off.png');
+}
+#back{
+  position:fixed;
+  top: 5px;
+  right:5px;
+  height: 40px;
+  margin: 0 auto;
+  color:white;
+  font-family:'Cuprum';
+  text-align:center;
+  text-transform:uppercase;
+}
+#back a{
+  color:white;
+  text-decoration:none;
+}
+#back span{
+  font-size:12px;
+}
+#deadCount{
+  position:fixed;
+  bottom: 350px;
+  width:100%;
+  margin: 0 auto;
+  color:white;
+  font-family:'Cuprum';
+  text-align:center;
+  text-transform:uppercase;
+  font-size:50px;
+}
+#paraCount{
+  position:fixed;
+  bottom:60px;
+  left:0;
+  margin: 0 auto;
+  color:black;
+  font-family:'Cuprum';
+  text-align:center;
+  font-weight:bold;
+  text-transform:uppercase;
+  font-size:10px;
+  height:45px;
+  width:30px;
+  background:url('../images/paraCount.jpg');
+}
+#twitter{
+  position:fixed;
+  bottom:75px;
+  right:15px;
+}
+#fb{
+  position:fixed;
+  top:5px;
+  left:5px;
+}
+#paraCount p{
+  padding-top:3px;
+}
+#flag{
+  position:fixed;
+  right:50px;
+  top:50px;
+}
+#otherPage{
+  position:fixed;
+  right:40px;
+  top:100px;
+}
+#otherPage a{
+  color:white;
+  text-decoration:none;
+  text-align:center;
+}
+#author{
+  position:fixed;
+  right:10px;
+  bottom:27px;
+  z-index: 15;
+  font-family:'Cuprum';
+}
+#author a{
+  color:white;
+  text-decoration:none;
+}
+img{
+  z-index:100;
+  cursor:pointer;
+}
