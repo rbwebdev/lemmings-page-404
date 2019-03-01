@@ -44,8 +44,8 @@ $(document).ready(function() {
   switch(lang){
     case 'fr' :
       win1Text='<p>Félicitations, vous avez sauvé les 404 Lemmings !<br/>Vous pouvez être fier de vous soldat.<br/><a href="/" style="color:white;">Retour au site</a></p><br/>';
-      win2_1Text='<p>Merci d\'avance pour les <b style="font-size:35px;">';
-      win2_2Text='</b> Lemmings que vous avez sauvés.<br/>Mais dans le but d\'éviter ce massacre à l\'avenir, ne remettez pas les pieds sur cette page ;)<br/><a href="/" style="color:white;">Retour au site</a></p><br/>';
+      win2_1Text='<p>Merci pour les <b style="font-size:35px;">';
+      win2_2Text='</b> Lemmings que vous avez sauvés.<br/>Dans le but d\'éviter ce massacre à l\'avenir, évitez de consulter des liens brisés.<br/><a href="/" style="color:white;">Retour au site</a></p><br/>';
       win3Text='<p>Le sacrifice a eu lieu devant vos yeux et vous êtes resté sans rien faire.<br/>Par respect de toutes ces victimes, merci de quitter cette page.<br/><a href="/" style="color:white;">Retour au site</a></p>';
       errorText='<p>Cette page n\'est plus de ce monde.<br/>Rester sur cette dernière entraînera le sacrifice de <b style="font-size:20px;">404</b> Lemmings.<br/>A moins que vous décidiez de tous les sauver !<br/><span style="font-size:12px;font-style:italic;">Survolez ces derniers pour les munir d\'un parachute.</span></p>';
       backText='<p><a href="/">Retourner au site<br/><span>(Et laisser ces pauvres lemmings mourir)</span></a></p>';
