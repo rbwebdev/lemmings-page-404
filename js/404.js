@@ -20,15 +20,14 @@ function noselection(target){
   }
 }
 function formatNumber(n,l){
-  taille=n.toString().length;
+  len=n.toString().length;
   newN=n;
-  for(i=0;i<l-taille;i++){
+  for(i=0;i<l-len;i++){
     newN='0'+newN;
   }
   return newN;
 }
 $(document).ready(function() {
-  document.getElementById('audiotag3').play();
   $('#sound').click(function(){
     if(sound){
       sound=false;
@@ -64,8 +63,8 @@ $(document).ready(function() {
   $('#back').html(backText);
   bottom=$(window).height();
   width=$(window).width();
-  vitesse=0.1;
-  time=bottom/vitesse;
+  speed=0.1;
+  time=bottom/speed;
   count=0;
   deadCount=0;
   winCount=0;

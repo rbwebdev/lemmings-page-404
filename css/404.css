@@ -30,7 +30,7 @@
 body{
   background:#000031;
 }
-#sol{
+#floor{
   display:block;
   width:100%;
   position:fixed;
@@ -121,16 +121,6 @@ body{
   width:30px;
   background:url('../images/paraCount.jpg');
 }
-#twitter{
-  position:fixed;
-  bottom:75px;
-  right:15px;
-}
-#fb{
-  position:fixed;
-  top:5px;
-  left:5px;
-}
 #paraCount p{
   padding-top:3px;
 }
@@ -138,16 +128,6 @@ body{
   position:fixed;
   right:50px;
   top:50px;
-}
-#otherPage{
-  position:fixed;
-  right:40px;
-  top:100px;
-}
-#otherPage a{
-  color:white;
-  text-decoration:none;
-  text-align:center;
 }
 #author{
   position:fixed;

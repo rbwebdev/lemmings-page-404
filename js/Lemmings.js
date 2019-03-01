@@ -9,7 +9,7 @@ function Lemmings(div,time,bottom,left,count,width){
   this.count = count;
   this.width=width;
   this.go=function(){
-    div.append('<img src="images/tombe.gif?i='+this.count+'" alt="lemming tombant" class="last" style="position:absolute;bottom:'+this.bottom+'px;left:'+left+'px;"/>');
+    div.append('<img src="images/fall.gif?i='+this.count+'" alt="lemming tombant" class="last" style="position:absolute;bottom:'+this.bottom+'px;left:'+left+'px;"/>');
     this.img=eval($('.last'));
     this.img.removeClass('last');
     this.img.animate({'bottom':'105'},this.time,'linear');
@@ -27,7 +27,7 @@ function Lemmings(div,time,bottom,left,count,width){
     },this.time);
   },
   this.mort=function(){
-    this.img.attr('src','images/ecrase.gif?i='+this.count);
+    this.img.attr('src','images/crushed.gif?i='+this.count);
     setTimeout(function(){
       oThis.img.remove();
     },1500);
@@ -35,7 +35,7 @@ function Lemmings(div,time,bottom,left,count,width){
   this.paraOpen=function(){
     this.img.attr('src','images/paraOpen.gif?i='+this.count);
     setTimeout(function(){
-      oThis.img.attr('src','images/paraTombe.gif?i='+oThis.count+'');
+      oThis.img.attr('src','images/paraFall.gif?i='+oThis.count+'');
     },600);
     vitesseOld = this.bottom/this.time;
     vitesseNew = vitesseOld*0.5;
@@ -48,7 +48,7 @@ function Lemmings(div,time,bottom,left,count,width){
   },
   this.marche=function(){
     this.etat='marche';
-    this.img.attr('src','images/marche.gif?i='+this.count);
+    this.img.attr('src','images/walk.gif?i='+this.count);
     newTime=(this.width-this.left)/0.05;
     this.img.animate({'left':this.width-100},newTime,'linear');
     setTimeout(function(){
